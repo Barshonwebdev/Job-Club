@@ -3,14 +3,31 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './Layout/Home.jsx';
-import Errorpage from './404/Errorpage.jsx';
+import Statistics from './components/Statistics/Statistics.jsx';
+import Errorpage from './components/404/Errorpage.jsx';
+import Home from './components/Home/Home.jsx';
+import Applied from './components/Applied/Applied.jsx';
+
 
 const router= createBrowserRouter([
   {
     path: '/',
     element: <Home></Home>,
-    errorElement: <Errorpage></Errorpage>
+    errorElement: <Errorpage></Errorpage>,
+    children:[
+      {
+        path:'/home',
+        element: <Home></Home>
+      },
+      {
+        path:'/stat',
+        element: <Statistics></Statistics>
+      },
+      {
+        path:'/applied',
+        element: <Applied></Applied>
+      }
+    ]
     
   }
 ]);
