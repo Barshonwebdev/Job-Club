@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link, NavLink } from 'react-router-dom';
+//text-lg md:text-sm text-lime-600 mr-5
 const Header = () => {
     return (
       <div className="flex justify-between ">
@@ -9,9 +9,16 @@ const Header = () => {
             <span className="text-indigo-700">Job</span>Club
           </h3>
         </div>
-        <div className="order-first md:order-1 flex flex-col md:flex-row">
+        <div className="order-first md:order-1 flex flex-col md:flex-row gap-1 md:gap-9">
           <div>
-            <Link to="/" className="text-lg md:text-sm text-lime-600 mr-5">
+            <NavLink
+              to="/"
+              className={({ isActive, isPending }) =>
+                isActive
+                  ? "text-lg md:text-sm text-lime-600  underline"
+                  : "text-lg md:text-sm text-lime-600 "
+              }
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -25,12 +32,16 @@ const Header = () => {
                 />
               </svg>
               Home
-            </Link>
-          </div>
-          <div>
-            <Link
+            </NavLink>
+            </div>
+            <div>
+            <NavLink
               to="/stat"
-              className="text-lg md:text-sm mr-5 text-sm text-lime-600"
+              className={({ isActive, isPending }) =>
+                isActive
+                  ? "text-lg md:text-sm text-lime-600  underline"
+                  : "text-lg md:text-sm text-lime-600 "
+              }
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,12 +56,16 @@ const Header = () => {
                 />
               </svg>
               Statistics
-            </Link>
-          </div>
-          <div>
-            <Link
+            </NavLink>
+            </div>
+            <div>
+            <NavLink
               to="/applied"
-              className="text-lg md:text-sm text-sm text-lime-600"
+              className={({ isActive, isPending }) =>
+                isActive
+                  ? "text-lg md:text-sm text-lime-600  underline"
+                  : "text-lg md:text-sm text-lime-600 "
+              }
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,10 +80,10 @@ const Header = () => {
                 />
               </svg>
               Applied Jobs
-            </Link>
+            </NavLink>
           </div>
         </div>
-        <div className="order-2">
+        <div className="order-2 mt-1">
           <button className="bg-lime-600 p-1 md:p-2 rounded-lg text-white text-xs hover:bg-lime-800">
             Start Applying
           </button>
