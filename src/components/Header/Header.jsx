@@ -9,7 +9,7 @@ const Header = () => {
             <span className="text-indigo-700">Job</span>Club
           </h3>
         </div>
-        <div className="order-first md:order-1 flex flex-col md:flex-row gap-1 md:gap-9">
+        <div className="order-first md:order-1 flex flex-col md:flex-row gap-1 md:gap-6">
           <div>
             <NavLink
               to="/"
@@ -26,9 +26,9 @@ const Header = () => {
                 className="w-4 h-4 inline md:hidden"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
               Home
@@ -50,9 +50,9 @@ const Header = () => {
                 className="w-4 h-4 inline md:hidden"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
               Statistics
@@ -74,9 +74,9 @@ const Header = () => {
                 className="w-4 h-4 inline md:hidden"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
               Applied Jobs
