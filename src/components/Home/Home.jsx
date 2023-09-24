@@ -16,7 +16,7 @@ const Home = () => {
               Providing competent people jobs all over the globe is our first
               priority. Hop in and enter the corporate world with ease!
             </p>
-            <button className="mt-5 bg-lime-600 p-2 rounded text-white hover:bg-lime-700">
+            <button className="mb-4 mt-5 bg-lime-600 p-2 rounded text-white hover:bg-lime-700">
               Get Started
             </button>
           </div>
