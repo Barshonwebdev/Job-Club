@@ -5,12 +5,12 @@ import Footer from '../Footer/Footer';
 
 const Main = () => {
     return (
-      <div className=''>
-        <div className="mx-3 md:mx-36 mt-5 ">
+      <div className="flex flex-col h-screen">
+        <div className="mx-3 md:mx-36 mt-5 mb-auto ">
           <Header></Header>
           <Outlet></Outlet>
-          <Footer></Footer>
         </div>
+        <Footer></Footer>
       </div>
     );
 };
