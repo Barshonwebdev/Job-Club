@@ -1,5 +1,6 @@
 import React from 'react';
 import Categories from '../Categories/Categories';
+import Jobs from '../Jobs/Jobs';
 
 
 const Home = () => {
@@ -8,7 +9,7 @@ const Home = () => {
         <div className="flex items-center text-center md:text-start mt-10 flex-col md:flex-row">
           <div className="">
             <h2 className="md:text-5xl font-semibold md:pe-36 mb-4">
-              One Step <br /> Closer To Your{" "}
+              One Step <br /> Closer To Your <br />
               <span className="text-lime-600">Dream Job</span>
             </h2>
             <p className="md:pe-60 text-xs text-gray-500 md:mt-4">
@@ -26,6 +27,7 @@ const Home = () => {
         </div>
 
         <Categories ></Categories>
+        <Jobs></Jobs>
       </div>
     );
 };
