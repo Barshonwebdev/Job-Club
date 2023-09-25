@@ -8,6 +8,7 @@ import Errorpage from './components/404/Errorpage.jsx';
 import Home from './components/Home/Home.jsx';
 import Applied from './components/Applied/Applied.jsx';
 import Main from './components/Layout/Main.jsx';
+import Details from './components/Details/Details.jsx';
 
 
 const router= createBrowserRouter([
@@ -19,6 +20,11 @@ const router= createBrowserRouter([
       {
         path:'/',
         element: <Home></Home>
+      },
+      {
+        path:'/:detailId',
+        element: <Details ></Details>,
+        loader: ()=> fetch ('jobs.json'),
       },
       {
         path:'/stat',
