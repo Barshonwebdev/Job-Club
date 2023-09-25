@@ -11,21 +11,36 @@ const Jobs = () => {
         .then (data=> setJobs(data.slice(0,4)))
     },[])
     console.log(jobs);
-
-    const handleAllJobs=()=>{
-        
+    
+    const [allJobs,setAllJobs]=useState([]);
+    useEffect(()=>{
+          fetch("/public/jobs.json")
+            .then((res) => res.json())
+            .then((data) => setAllJobs(data))
+    },[])
+    
+    const [showButton,setShowButton]=useState(true);
+    const toggleButton=()=>{
+      setJobs(allJobs);
+      setShowButton(!showButton);
     }
     return (
       <div>
-        <div className="md:mt-32 mt-10 grid md:grid-cols-2 gap-10 md:mx-32">
+        <div className="md:mt-32 mt-10 grid md:grid-cols-2 gap-10 md:mx-32 ">
           {jobs.map((job) => (
             <Job key={job.id} job={job}></Job>
           ))}
         </div>
+
         <div className="text-center mt-5">
-          <button className="px-3 py-1 hover:bg-lime-800 rounded text-white bg-lime-600">
-            See All Jobs
-          </button>
+          {showButton && (
+            <button
+              onClick={toggleButton}
+              className="px-3 py-1 hover:bg-lime-800 rounded text-white bg-lime-600"
+            >
+              See All Jobs
+            </button>
+          )}
         </div>
       </div>
     );
