@@ -1,5 +1,5 @@
 import React from "react";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from "recharts";
 
 const Statistics = () => {
   const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
@@ -50,10 +50,11 @@ const Statistics = () => {
 
   return (
     <div className="flex flex-col">
-        <p className="italic bg-sky-800 text-white text-center mt-10 text-2xl mb-5 border border-blue-300 inline mx-auto rounded-lg px-3">
-          Bar chart of company yearly salaries (K)
-        </p>
-        <div className="flex justify-center">
+      <p className="italic bg-sky-800 text-white text-center mt-10 text-2xl mb-5 border border-blue-300 inline mx-auto rounded-lg px-3">
+        Bar chart of company yearly salaries (K)
+      </p>
+      <div className="flex justify-center ">
+        <ResponsiveContainer width="85%" height={300}>
           <BarChart
             width={500}
             height={300}
@@ -79,8 +80,9 @@ const Statistics = () => {
               ))}
             </Bar>
           </BarChart>
-        </div>
-      <div className=" mt-20 w-1/2 flex flex-col p-5 rounded-lg bg-lime-50 border-black border">
+        </ResponsiveContainer>
+      </div>
+      <div className=" mt-20 md:w-1/2 flex flex-col p-5 rounded-lg bg-lime-50 border-black border">
         <h3 className="text-3xl mb-4">Why Stats are important?</h3>
         <p>
           Job statistics displayed on a job application website are crucial for
@@ -101,7 +103,7 @@ const Statistics = () => {
           valuable feature on job application websites.
         </p>
       </div>
-      <div className="ml-auto mt-20 border border-black w-1/2 flex flex-col p-5 rounded-lg bg-lime-50">
+      <div className="ml-auto mt-20 border border-black md:w-1/2 flex flex-col p-5 rounded-lg bg-lime-50">
         <h3 className="text-3xl mb-4">What are we showing here?</h3>
         <p>
           Our job application website provides essential job statistics,
