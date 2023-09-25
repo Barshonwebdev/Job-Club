@@ -50,10 +50,10 @@ const Statistics = () => {
 
   return (
     <div className="flex flex-col">
-      <p className="italic bg-sky-800 text-white text-center mt-10 text-2xl mb-5 border border-blue-300 inline mx-auto rounded-lg px-3">
+      <p className="italic bg-sky-800 text-white text-center mt-10 md:text-2xl mb-5 border border-blue-300 inline mx-auto rounded-lg px-3">
         Bar chart of company yearly salaries (K)
       </p>
-      <div className="flex justify-center ">
+      <div className="flex justify-center md:px-48 mr-12">
         <ResponsiveContainer width="100%" height={300}>
           <BarChart
             width={500}
