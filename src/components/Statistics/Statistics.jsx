@@ -54,7 +54,7 @@ const Statistics = () => {
         Bar chart of company yearly salaries (K)
       </p>
       <div className="flex justify-center ">
-        <ResponsiveContainer width="85%" height={300}>
+        <ResponsiveContainer width="100%" height={300}>
           <BarChart
             width={500}
             height={300}
