@@ -8,7 +8,7 @@ const Home = () => {
       <div>
         <div className="flex items-center text-center md:text-start mt-10 flex-col md:flex-row">
           <div className="">
-            <h2 className="md:text-5xl font-semibold md:pe-36 mb-4">
+            <h2 className="motion-safe:animate-bounce md:text-5xl font-semibold md:pe-36 mb-4">
               One Step <br /> Closer To Your <br />
               <span className="text-lime-600">Dream Job</span>
             </h2>
