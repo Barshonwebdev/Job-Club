@@ -9,7 +9,7 @@ const Applied = () => {
         .then(data=>console.log(data))
     },[])
     return (
-      <div className="mb-24">
+      <div className="mb-16">
         <h3 className="text-center mt-20 font-mono text-2xl">Applied Jobs</h3>
       </div>
     );
