@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const AppliedJob = ({job}) => {
     const {id,logo,Company,title,salary,type,jobLocation,location}=job;
     return (
-      <div className="border items-center border-solid border-gray-300 rounded py-5 px-10 mb-8 flex">
+      <div className="border items-center border-solid border-gray-300 rounded py-4 px-2 md:py-5 md:px-10 mb-8 flex">
         <div className="grow">
           <div className="w-2/4 h-8 mb-5">
             <img className="" src={logo} alt="" />
@@ -34,8 +34,8 @@ const AppliedJob = ({job}) => {
         </div>
         <div className=" mt-3">
           <Link to={`/${id}`}>
-            <button className="px-3 py-1 hover:bg-lime-800 rounded text-white bg-lime-600">
-              View Details 
+            <button className="md:px-3 md:py-1 text-sm md:text-md hover:bg-lime-800 rounded text-white bg-lime-600">
+             Details 
             </button>
           </Link>
         </div>
