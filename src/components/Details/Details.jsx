@@ -16,6 +16,10 @@ const Details = () => {
     const post=data.find((ob)=>ob.id===idNumber);
     const {description,experience,responsibility,requirement,phone, salary,title,email,address,Company}=post;
     console.log(post);
+
+    const handleApply=()=>{
+      console.log(idNumber)
+    }
     return (
       <div className="mb-24">
         <h3 className="text-center mt-20 font-mono text-2xl">Job Details</h3>
@@ -89,7 +93,7 @@ const Details = () => {
               </div>
             </div>
             <div>
-              <button className=" hover:bg-lime-900 mt-5 w-full text-center border border-lime-700 rounded bg-lime-700 text-white p-2">
+              <button onClick={handleApply} className=" hover:bg-lime-900 mt-5 w-full text-center border border-lime-700 rounded bg-lime-700 text-white p-2">
                 Apply Now
               </button>
             </div>
