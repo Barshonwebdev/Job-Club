@@ -32,7 +32,7 @@ const Job = ({ job }) => {
       <div className=" mt-3">
         <Link to={`/${id}`}>
           <button className="px-3 py-1 hover:bg-lime-800 rounded text-white bg-lime-600">
-            View Details
+             Details
           </button>
         </Link>
       </div>

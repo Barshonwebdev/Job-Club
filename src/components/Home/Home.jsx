@@ -1,7 +1,6 @@
 import React from 'react';
 import Categories from '../Categories/Categories';
 import Jobs from '../Jobs/Jobs';
-import toast, { Toaster } from 'react-hot-toast';
 
 
 const Home = () => {
@@ -29,7 +28,6 @@ const Home = () => {
 
         <Categories ></Categories>
         <Jobs></Jobs>
-        <Toaster></Toaster>
       </div>
     );
 };

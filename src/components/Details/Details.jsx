@@ -28,7 +28,8 @@ const Details = () => {
         toast('You have already applied to this job once', {
           style:{
             backgroundColor: "blue",
-            color:"white"
+            color:"white",
+            marginTop:"50px"
           }
         })
       }

@@ -3,7 +3,15 @@ import toast, { Toaster } from 'react-hot-toast';
 import { Link, NavLink } from 'react-router-dom';
 //text-lg md:text-sm text-lime-600 mr-5
 const Header = () => {
-    
+    const handleApply=()=>{
+      toast("Go to any job details to apply!", {
+        style: {
+          backgroundColor: "blue",
+          color: "white",
+          marginTop:"50px"
+        },
+      });
+    }
     return (
       <div className="flex justify-between ">
         <div className="">
@@ -86,7 +94,7 @@ const Header = () => {
           </div>
         </div>
         <div className="order-2 mt-1">
-          <button  className="animate-pulse bg-lime-600 p-1 md:p-2 rounded-lg text-white text-xs hover:bg-lime-800">
+          <button onClick={handleApply} className="animate-pulse bg-lime-600 p-1 md:p-2 rounded-lg text-white text-xs hover:bg-lime-800">
             Start Applying
           </button>
         </div>
