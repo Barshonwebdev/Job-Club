@@ -15,7 +15,7 @@ const Header = () => {
     return (
       <div className="flex justify-between ">
         <div className="">
-          <h3 className="text-2xl md:text-3xl text-emerald-600 italic font-extrabold ">
+          <h3 className="text-2xl mr-8 md:text-3xl text-emerald-600 italic font-extrabold ">
             <span className="text-indigo-700">Job</span>Club
           </h3>
         </div>
