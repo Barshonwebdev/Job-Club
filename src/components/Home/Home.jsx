@@ -22,7 +22,7 @@ const Home = () => {
             </button>
           </div>
           <div className="w-full">
-            <img className="" src="../../../assets/images/user.png" alt="" />
+            <img className="" src="/images/user.png" alt="" />
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "logo": "../assets/logo/google.png",
+    "logo": "/logo/google.png",
     "title": " Junior Software Engineer",
     "Company": "Google LLC",
     "location": "California, USA",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "logo": "../assets/logo/netflix.png",
+    "logo": "/logo/netflix.png",
     "title": "Executive Product Designer",
     "Company": "Netflix",
     "location": "California, USA",
@@ -36,7 +36,7 @@
   },
   {
     "id": 3,
-    "logo": "../assets/logo/tesla.png",
+    "logo": "/logo/tesla.png",
     "title": "Senior Project Manager",
     "Company": "Tesla",
     "location": "Texas, USA",
@@ -53,7 +53,7 @@
   },
   {
     "id": 4,
-    "logo": "../assets/logo/airbnb.png",
+    "logo": "/logo/airbnb.png",
     "title": "Senior Executive",
     "Company": "Airbnb",
     "location": "California, USA",
@@ -70,7 +70,7 @@
   },
   {
     "id": 5,
-    "logo": "../assets/logo/netflix.png",
+    "logo": "/logo/netflix.png",
     "title": "Junior Designer",
     "Company": "Netflix",
     "location": "California, USA",
@@ -87,7 +87,7 @@
   },
   {
     "id": 6,
-    "logo": "../assets/logo/tesla.png",
+    "logo": "/logo/tesla.png",
     "title": "Software Engineer",
     "Company": "Tesla",
     "location": " Texas, USA",
@@ -104,7 +104,7 @@
   },
   {
     "id": 7,
-    "logo": "../assets/logo/google.png",
+    "logo": "/logo/google.png",
     "title": "Technical Data Engineer",
     "Company": "Google LLC",
     "location": "California, USA",
@@ -121,7 +121,7 @@
   },
   {
     "id": 8,
-    "logo": "../assets/logo/airbnb.png",
+    "logo": "/logo/airbnb.png",
     "title": "Senior Field Operative",
     "Company": "Airbnb",
     "location": "California, USA",
@@ -138,7 +138,7 @@
   },
   {
     "id": 9,
-    "logo": "../assets/logo/google.png",
+    "logo": "/logo/google.png",
     "title": "Senior Web Engineer",
     "Company": "Google LLC",
     "location": "California, USA",

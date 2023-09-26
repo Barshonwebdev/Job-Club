@@ -30,3 +30,7 @@ Core Features:
 
 
 Hosting- Live Hosted on Netlify and Surge
+
+Netlify link- https://job-club.netlify.app/
+
+surge link- https://flat-boundary.surge.sh/
