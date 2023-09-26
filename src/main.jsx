@@ -9,6 +9,7 @@ import Home from './components/Home/Home.jsx';
 import Applied from './components/Applied/Applied.jsx';
 import Main from './components/Layout/Main.jsx';
 import Details from './components/Details/Details.jsx';
+import applyLoader from "./components/loader/applyLoader.js";
 
 
 const router= createBrowserRouter([
@@ -32,7 +33,8 @@ const router= createBrowserRouter([
       },
       {
         path:'/applied',
-        element: <Applied></Applied>
+        element: <Applied></Applied>,
+        loader:applyLoader,
       }
     ]
     

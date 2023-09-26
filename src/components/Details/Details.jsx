@@ -7,7 +7,7 @@ import { PhoneIcon } from "@heroicons/react/24/solid";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import { addToDb, getStoredJobs } from '../../utilities/fakedb';
-import toast, { Toaster } from 'react-hot-toast';
+import  { toast,Toaster } from 'react-hot-toast';
 
 const Details = () => {
     const data= useLoaderData();
