@@ -89,7 +89,7 @@ const Details = () => {
               </div>
             </div>
             <div>
-              <button className="mt-5 w-full text-center border border-lime-700 rounded bg-lime-700 text-white p-2">
+              <button className=" hover:bg-lime-900 mt-5 w-full text-center border border-lime-700 rounded bg-lime-700 text-white p-2">
                 Apply Now
               </button>
             </div>
