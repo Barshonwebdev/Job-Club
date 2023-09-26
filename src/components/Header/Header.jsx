@@ -25,7 +25,7 @@ const Header = () => {
               to="/"
               className={({ isActive, isPending }) =>
                 isActive
-                  ? "text-lg md:text-md  rounded text-sky-600  p-1  underline"
+                  ? "text-lg md:text-md  rounded text-white  p-1  bg-blue-900"
                   : "text-lg md:text-md  rounded text-sky-600  p-1 "
               }
             >
@@ -43,13 +43,13 @@ const Header = () => {
               </svg>
               Home
             </NavLink>
-            </div>
-            <div>
+          </div>
+          <div>
             <NavLink
               to="/stat"
               className={({ isActive, isPending }) =>
                 isActive
-                  ? "text-lg md:text-md  rounded text-sky-600  p-1  underline"
+                  ? "text-lg md:text-md  rounded text-white  p-1  bg-blue-900"
                   : "text-lg md:text-md  rounded text-sky-600  p-1 "
               }
             >
@@ -67,13 +67,13 @@ const Header = () => {
               </svg>
               Statistics
             </NavLink>
-            </div>
-            <div>
+          </div>
+          <div>
             <NavLink
               to="/applied"
               className={({ isActive, isPending }) =>
                 isActive
-                  ? "text-lg md:text-md  rounded text-sky-600  p-1  underline"
+                  ? "text-lg md:text-md  rounded text-white  p-1  bg-blue-900"
                   : "text-lg md:text-md  rounded text-sky-600  p-1 "
               }
             >
@@ -94,7 +94,10 @@ const Header = () => {
           </div>
         </div>
         <div className="order-2 mt-1">
-          <button onClick={handleApply} className="animate-pulse bg-lime-600 p-1 md:p-2 rounded-lg text-white text-xs hover:bg-lime-800">
+          <button
+            onClick={handleApply}
+            className="animate-pulse bg-lime-600 p-1 md:p-2 rounded-lg text-white text-xs hover:bg-lime-800"
+          >
             Start Applying
           </button>
         </div>

@@ -7,6 +7,8 @@ import AppliedJob from '../AppliedJob/AppliedJob';
 const Applied = () => {
     const appliedJobs= useLoaderData();
     const [jobs,setJobs]=useState(appliedJobs);
+    const [remoteJobs,setRemotejobs]=useState([]);
+    const [onsiteJobs,setOnsiteJobs]=useState([]);
     console.log(jobs);
     return (
       <div className="mb-10">
