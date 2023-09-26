@@ -33,6 +33,15 @@ const Details = () => {
           }
         })
       }
+      else if (quantity==1){
+         toast("Applying Successful!", {
+           style: {
+             backgroundColor: "blue",
+             color: "white",
+             marginTop: "50px",
+           },
+         });
+      }
     }
     return (
       <div className="mb-24">
