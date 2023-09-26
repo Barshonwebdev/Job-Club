@@ -8,6 +8,7 @@ const Applied = () => {
     const appliedJobs= useLoaderData();
     const [jobs,setJobs]=useState(appliedJobs);
     console.log(appliedJobs);
+    
     const handleRemote=()=>{
       const remotejobArray = jobs.filter((job) => job.jobLocation == "Remote");
       setJobs(remotejobArray);
@@ -28,7 +29,7 @@ const Applied = () => {
           <h2>Sort by: </h2>
           <button onClick={handleOnsite} className='ms-2 bg-sky-600 hover:bg-sky-800 text-white p-1 rounded-lg'>Onsite</button>
           <button onClick={handleRemote}  className='ms-2 bg-sky-600 hover:bg-sky-800 text-white p-1 rounded-lg'>Remote</button>
-          <button onClick={handleUnsorted}  className='ms-2 bg-sky-600 hover:bg-sky-800 text-white p-1 rounded-lg'>Unsorted</button>
+          <button onClick={handleUnsorted}  className='ms-2 bg-sky-600 hover:bg-sky-800 text-white p-1 rounded-lg'>Unsort</button>
         </div>
         <div className='mt-5 '>
           {jobs.map((job) => (
