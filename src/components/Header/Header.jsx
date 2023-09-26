@@ -84,7 +84,7 @@ const Header = () => {
           </div>
         </div>
         <div className="order-2 mt-1">
-          <button className="bg-lime-600 p-1 md:p-2 rounded-lg text-white text-xs hover:bg-lime-800">
+          <button className="animate-pulse bg-lime-600 p-1 md:p-2 rounded-lg text-white text-xs hover:bg-lime-800">
             Start Applying
           </button>
         </div>

@@ -105,7 +105,7 @@ const Details = () => {
                 </p>
               </div>
             </div>
-            <div className='motion-safe:animate-bounce'>
+            <div className='animate-pulse'>
               <button onClick={handleApply} className=" hover:bg-lime-900 mt-5 w-full text-center border border-lime-700 rounded bg-lime-700 text-white p-2">
                 Apply Now
               </button>
