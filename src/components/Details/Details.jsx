@@ -25,7 +25,7 @@ const Details = () => {
       let jobStorage=getStoredJobs();
       const quantity= jobStorage[idNumber]
       if(quantity>1){
-        toast('You have already added this job once', {
+        toast('You have already applied to this job once', {
           style:{
             backgroundColor: "green",
             color:"white"
