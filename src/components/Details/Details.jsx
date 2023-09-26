@@ -27,7 +27,7 @@ const Details = () => {
       if(quantity>1){
         toast('You have already applied to this job once', {
           style:{
-            backgroundColor: "green",
+            backgroundColor: "blue",
             color:"white"
           }
         })
