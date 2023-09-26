@@ -78,7 +78,7 @@ const Details = () => {
                   Company: <span className="text-gray-600">{Company}</span>
                 </p>
               </div>
-              <div className="mt-2 flex items-center">
+              <div className="mt-2 flex">
                 <BriefcaseIcon className="h-4 w-4 text-lime-700"></BriefcaseIcon>
                 <p className="text-sm font-semibold ms-1">
                   Job Title: <span className="text-gray-600">{title}</span>
