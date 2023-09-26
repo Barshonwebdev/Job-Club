@@ -6,6 +6,8 @@ import { BriefcaseIcon } from "@heroicons/react/24/solid";
 import { PhoneIcon } from "@heroicons/react/24/solid";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { MapPinIcon } from "@heroicons/react/24/solid";
+import { addToDb, getStoredJobs } from '../../utilities/fakedb';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Details = () => {
     const data= useLoaderData();
@@ -18,7 +20,18 @@ const Details = () => {
     console.log(post);
 
     const handleApply=()=>{
-      console.log(idNumber)
+      console.log(idNumber);
+      addToDb(idNumber);
+      let jobStorage=getStoredJobs();
+      const quantity= jobStorage[idNumber]
+      if(quantity>1){
+        toast('You have already added this job once', {
+          style:{
+            backgroundColor: "green",
+            color:"white"
+          }
+        })
+      }
     }
     return (
       <div className="mb-24">
@@ -96,6 +109,7 @@ const Details = () => {
               <button onClick={handleApply} className=" hover:bg-lime-900 mt-5 w-full text-center border border-lime-700 rounded bg-lime-700 text-white p-2">
                 Apply Now
               </button>
+              <Toaster></Toaster>
             </div>
           </div>
         </div>
