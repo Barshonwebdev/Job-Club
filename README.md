@@ -1,6 +1,6 @@
-Job-Club \
+Job-Club 
 
-Job-Club is a website for job application.\
+Job-Club is a website for job application.
 
 Used Technologies and packages:\
 -ReactJS \
@@ -8,7 +8,7 @@ Used Technologies and packages:\
 -Tailwind css\
 -Hero Icon\
 -React Hot Toast\
--Recharts\
+-Recharts
 
 Core Features:\
 -Made with react library of javascript\
@@ -24,12 +24,12 @@ Core Features:\
 -user can apply to any job by going to each job's details page\
 -localstorage used for user's applied jobs data storing\
 -user can see his/her applied jobs in the applied jobs page\
--user can sort applied jobs (remote/onsite)\
+-user can sort applied jobs (remote/onsite)
 
-\
-\
 
-Hosting- Live Hosted on Netlify and Surge\
+
+
+Hosting- Live Hosted on Netlify and Surge
 
 Netlify link- https://job-club.netlify.app/
 \
